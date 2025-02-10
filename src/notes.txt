@@ -1,0 +1,163 @@
+ReactJS:-
+---------------------------------------------------------------------------------------
+-JavaScript is having libraries and frameworks.
+
+libraries :- it is a collection of codes.
+           - less set of rules.
+           - reactjs , jquery etcc..
+
+frameworks :- it is a collection of libraries
+            - more set of rules. 
+            - angular(2009) , vueJS etc..
+
+importance of ReactJS:-
+----------------------------------------------------------------------------------------
+1) ReactJS is JavaScript library to build rich reusable user(declarative) interface.
+2) ReactJS is faster because of "virtual DOM".
+3) react follows component based architecture.
+-reusability.
+4) react follows unidirectional data flow.
+5) react follows client-side rendering and server-side side rendering
+
+-React was introduced in 2011 by facebook.
+- Jordan Walke.
+- 2013 react made as a open - source .
+- react is a free and platform-independent.
+
+to install react app :-
+---------------------------------------------------------------------------------------
+- install node js
+- node -v
+
+-npm install create-react-app --globally
+-npm init react-app myapp (not begin with react and no capital letters)
+
+
+single page application any changes is happening it will happen in one tap(modern appproacch
+in multipage it takes many pages it takes many reloads(traditional approach)
+
+-React is mainly used to create single page applications.
+
+what is virtual DOM ?
+virtual DOM is a virtual representation of a UI which is kept in a memory later synced with real DOM with the help of a library called react DOM library
+
+the updating of real DOM with virtual DOM
+
+the entire process of updating the RealDOM with the help of VDOM is called as Reconcialtion
+
+JSX:-
+- JSX stands for JAVASCRIPT and XML .
+- JSX is a javascript syntax extention used to create HTML-like markup in the react .
+- actual way to create a element in react is by using a method called as,
+------React.createElement("tagname",{property:"value",content/children)
+let ele = React.createElement("div",{className:"App"},React.createElement("h1",null,"header")
+
+JSX is not a part of react but its recommended to use in react by the developer 
+
+Rules of JSX:-
+1)  every element irrespective of paired/unpaired tag both must be closed.
+ex:- <h1></h1> , <input/>
+2) more than one jsx element is used then they must wrapped with one parent 
+
+JSX expression:-
+
+- JSX expression is used to call the variable, mathematical expression inside the element.
+Syntax:- <h1>{variable/expression}</h1>
+
+components:-
+
+-components are the files which conist of js related logics which can be reuse .
+
+component are divided into two types:
+1)
+2)functional based components:
+
+1)calss based components(CBC):-
+-CBC is similar to javascript es6 class.
+-CBC are "stateful" component because of default state object present inside the class.
+syntax:- 
+
+class Person{
+	constructor(name,age){
+		this.name=name;
+		this.age = age;
+	}
+}
+class Child extends Person{
+	constructor(name,age,city){
+		super(name,age);
+		this.city=city;
+	}
+}
+
+Syntax:- 
+class App extends React.Component{
+	render(){
+		return(
+		//JSX
+		)
+	}
+}
+export default App;
+
+2)functional based component:-
+-FBC are similar to JS functions.
+-FBC are "Stateless because there is no state object until react V16.8
+
+
+
+
+
+
+
+
+
+note:- while creating a react component the names must be started with capital letters.
+-extension of a component file must be .jsx/.js
+-how to call a component.
+ <App> / <App></App>
+
+component composition:-
+-------------------------------------------
+-component composition is used to combine multiple components into single application.
+
+Props:-
+------------
+- props is nothing but properties similar to html attributes. 
+- props is an object.
+- props is an object used to exchange information or data from parent component to child component.
+
+props.children
+
+
+state:- 
+**********
+- state is an mutaual object which is used to store/isolate the date inside the component.
+
+class component:-
+****************
+- class component is having the state object by default
+
+syntax:- constructor(){
+		super();
+		this.state={
+		users:["vikas","590"],
+		num:100
+	}
+
+- to update the state object of a class component we have a method "this.setState({})
+
+
+functional component:-
+- by default functional component stateless because there is no state boject.
+-in react v16.8 , they introduced a concept called as "Hooks".
+syntax :- const[state,setState]= useState(inital value);
+state - it will store initial value
+setState - its used to update
+
+
+2.useEffect():-
+*********************
+-it allows developers to make necessary changes /side effects inside the componet
+
+syntax:- useEffect(callbackfn,,dependency);

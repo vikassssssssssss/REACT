@@ -113,14 +113,28 @@
 // export default App
 
 //! state component
-import React from 'react'
-// import CBCStateEx from './stateexample/CBCStateEx'
-import FBCStateEx from './stateexample/FBCStateEx'
-const App=()=>{
-  return (
-    // <CBCStateEx/>
-    <FBCStateEx/>
+// import React, { useEffect, useState } from 'react'
+// // import CBCStateEx from './stateexample/CBCStateEx'
+// import FBCStateEx from './stateexample/FBCStateEx'
+// const App=()=>{
+//   return (
+//     // <CBCStateEx/>
+//     <FBCStateEx/>
     
+//   )
+// }
+// export default App;
+
+//! hooks example
+import React from 'react'
+import UseEffectEx from './hookexamples/UseEffectEx'
+
+const App = () => {
+  return (
+    <div> <UseEffectEx/>
+      
+    </div>
   )
 }
-export default App;
+
+export default App
